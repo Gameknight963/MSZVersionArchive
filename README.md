@@ -1,3 +1,6 @@
+![Downloads](https://img.shields.io/github/downloads/gameknight963/MSZVersionArchive/total)
+![Latest Release](https://img.shields.io/github/v/release/gameknight963/MSZVersionArchive)
+
 ## Miside Zero versions archive
 
 ### Why does this exist?
