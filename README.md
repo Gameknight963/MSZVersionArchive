@@ -16,8 +16,7 @@ Because the game isn't open source. Duh.
 ### Disclaimer
 
 This repo is in no way endorsed, approved, 
-or controlled by the developers of Miside Zero 
-(Nick and Kojo). It is an unoffial archive primarily
+or controlled by the developer(s) of Miside Zero. It is an unoffial archive primarily
 for use in my tool 
 [launcher.NET](https://github.com/Gameknight963/launcher.NET).
 
