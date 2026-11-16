@@ -1,7 +1,7 @@
 ![Downloads](https://img.shields.io/github/downloads/gameknight963/MSZVersionArchive/total)
 ![Latest Release](https://img.shields.io/github/v/release/gameknight963/MSZVersionArchive)
 
-## Miside Zero versions archive
+# Miside Zero versions archive
 
 ### Why does this exist?
 
@@ -26,13 +26,16 @@ Consider checking out the developer's
 [official itch page](https://voidwaygames.itch.io/misidezero)
 to support them!
 
-### Warning
-The file structure of releases in this repo differs from 
-what is distributed on the offical itch page.
+# Using MSZVersionArchive programmatically
 
-The top level folder has been removed for simplicity.
+## File structure
 
-Example:
+The file format and structure distributed in this repo differs from the original itch page.
+
+All Windows artifacts are flat archives. This is because Explorer creates a new folder for you when extracting, so it's the convention for distributing Windows applications.
+
+<details>
+<summary>Example</summary>
 
 **Offical:**
 ```
@@ -54,3 +57,27 @@ Example:
         ├───Resources
         └───StreamingAssets
 ```
+
+</details>
+
+All Linux builds are wrapped tarballs. You won't get tarbombed by extracting them.
+
+Android builds are just `.apk` files, and iOS builds are `.ipa` files. MacOS builds are a zip file containing the `MisideZero.app/` folder.
+
+## Artifact naming conventions
+
+```
+MiSide-Zero-{version}_{platform}.{extension}
+```
+
+All artifacts begin with `MiSide-Zero-`, then the version (always identical to the tag), followed by an underscore, and then the platform name. The platform name is guaranteed to have no dots (`.`) in it, so read until you find one. Anything past that point is the file extension.
+
+The platform name isn't as standardized as it probably should be, but you should be able to get by checking if it _contains_ the following strings, case-insensitive:
+
+ - `win` for Windows
+ - `linux` for Linux
+ - `ios` for iOS
+ - `mac` for MacOS
+ - `android` for Android
+
+Planned: download examples in C#, C++, and Python
