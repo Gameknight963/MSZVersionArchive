@@ -75,3 +75,7 @@ The platform name isn't as standardized as it probably should be, but you should
 
 Runnable examples are available in [C++](examples/cpp/download.cpp),
 [C#](examples/csharp/Program.cs), and [Python](examples/python/download.py).
+
+The example code and build files under examples/ are dedicated to the public domain under CC0 1.0.
+
+This dedication does NOT cover the game builds distributed through GitHub Releases. Those remain subject to their respective owners’ rights and licenses.
