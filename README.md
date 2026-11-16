@@ -5,20 +5,11 @@
 
 ### Why does this exist?
 
-itch.io doesn't have a useful API.
-Developers didn't respond to my request to 
-upload builds to Releases, so I did it myself.
-
-### Why is there no source code?
-
-Because the game isn't open source. Duh.
+itch.io doesn't have a useful API, and I wanted to fetch MSZ builds through code. Now it's also become more of a preservation thing since you can't access the old builds through itch.io.
 
 ### Disclaimer
 
-This repo is in no way endorsed, approved, 
-or controlled by the developer(s) of Miside Zero. It is an unoffial archive primarily
-for use in my tool 
-[launcher.NET](https://github.com/Gameknight963/launcher.NET).
+This repo is NOT an official download source! It is an unoffial archive primarily for use in my tool [launcher.NET](https://github.com/Gameknight963/launcher.NET).
 
 All trademarks and copyrights belong to their respective owners.
 
@@ -70,7 +61,7 @@ Android builds are just `.apk` files, and iOS builds are `.ipa` files. MacOS bui
 MiSide-Zero-{version}_{platform}.{extension}
 ```
 
-All artifacts begin with `MiSide-Zero-`, then the version (always identical to the tag), followed by an underscore, and then the platform name. The platform name is guaranteed to have no dots (`.`) in it, so read until you find one. Anything past that point is the file extension.
+All artifacts begin with `MiSide-Zero-`, then the version, which is the tag, but without the leading `v`, followed by an underscore, and then the platform name. The platform name is guaranteed to have no dots (`.`) in it, so read until you find one. Anything past that point is the file extension.
 
 The platform name isn't as standardized as it probably should be, but you should be able to get by checking if it _contains_ the following strings, case-insensitive:
 
@@ -80,4 +71,7 @@ The platform name isn't as standardized as it probably should be, but you should
  - `mac` for MacOS
  - `android` for Android
 
-Planned: download examples in C#, C++, and Python
+## Download examples
+
+Runnable examples are available in [C++](examples/cpp/download.cpp),
+[C#](examples/csharp/Program.cs), and [Python](examples/python/download.py).
